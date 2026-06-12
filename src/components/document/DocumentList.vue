@@ -24,6 +24,9 @@
 </template>
 
 <script setup lang="ts">
+import { NButton } from 'naive-ui';
+import type { DocumentSummary } from '@/types/document';
+
 defineProps<{
   documents: DocumentSummary[];
   activeDocumentId?: string | null;
@@ -35,13 +38,6 @@ defineEmits<{
   delete: [id: string];
   rename: [id: string, title: string];
 }>();
-
-interface DocumentSummary {
-  id: string;
-  title: string;
-  updatedAt: number;
-  wordCount?: number;
-}
 </script>
 
 <style scoped>

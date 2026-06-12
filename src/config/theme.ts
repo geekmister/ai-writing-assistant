@@ -5,10 +5,29 @@ export const lightThemeOverrides: GlobalThemeOverrides = {
   common: {
     primaryColor: '#18a058',
     primaryColorHover: '#36ad6a',
+    primaryColorPressed: '#0f7b40',
     borderRadius: '4px',
+    fontSize: '14px',
+    bodyColor: '#f5f6fa',
+    cardColor: '#ffffff',
+    modalColor: '#ffffff',
+    textColor1: '#1e293b',
+    textColor2: '#475569',
+    textColor3: '#94a3b8',
+    borderColor: '#e2e8f0',
+    dividerColor: '#e2e8f0',
+    hoverColor: 'rgba(24, 160, 88, 0.06)',
   },
   Button: {
-    textColor: '#FFFFFF',
+    textColor: '#ffffff',
+  },
+  Input: {
+    color: '#ffffff',
+    colorFocus: '#ffffff',
+  },
+  Card: {
+    color: '#ffffff',
+    borderColor: '#e2e8f0',
   },
 };
 

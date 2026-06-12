@@ -1,10 +1,14 @@
 <script setup lang="ts">
 import AppHeader from '@/components/common/AppHeader.vue';
+
+const emit = defineEmits<{
+  'open-settings': [];
+}>();
 </script>
 
 <template>
   <div class="settings-view">
-    <AppHeader />
+    <AppHeader @open-settings="emit('open-settings')" />
     <div class="settings-content">
       <h2>设置</h2>
       <p class="coming-soon">设置面板将在后续任务中实现</p>
